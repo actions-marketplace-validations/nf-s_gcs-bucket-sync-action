@@ -1,4 +1,4 @@
-name: "Google Cloud Storage Bucket Sync (GCP,GCS)"
+name: "GCS bucket sync"
 description: "Sync a Github repository with a Google Cloud Storage (GCS) bucket"
 author: "Nick Forbes-Smith"
 
