@@ -8,8 +8,8 @@ rm /secrets.json
 echo "Syncing bucket $BUCKET ..."
 echo "Using Cache-Control:public, max-age=$INPUT_CACHECONTROL"
 
-# If compressing files, add -z flag
+# If compressing files, add -J flag
 [ "$INPUT_COMPRESS" = "true" ] &&
-  gsutil -m rsync -r -c -d -z -h "Cache-Control:public, max-age=$INPUT_CACHECONTROL" -x "$INPUT_EXCLUDE" /github/workspace gs://$INPUT_BUCKET/ ||
-  gsutil -m rsync -r -c -d -h "Cache-Control:public, max-age=$INPUT_CACHECONTROL" -x "$INPUT_EXCLUDE" /github/workspace gs://$INPUT_BUCKET/
+  gsutil -m -h "Cache-Control:public, max-age=$INPUT_CACHECONTROL" rsync -r -c -d -J -x "$INPUT_EXCLUDE" /github/workspace gs://$INPUT_BUCKET/ ||
+  gsutil -m -h "Cache-Control:public, max-age=$INPUT_CACHECONTROL" rsync -r -c -d -x "$INPUT_EXCLUDE" /github/workspace gs://$INPUT_BUCKET/
 echo "Done."
