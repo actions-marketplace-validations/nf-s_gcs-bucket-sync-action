@@ -1,5 +1,7 @@
 # GCS Bucket Sync Action
 
+Forked from https://github.com/patrickwyler/gcs-bucket-sync-action (credit to [Patrick Wyler](https://github.com/patrickwyler) - see [LICENSE](LICENSE))
+
 This action helps by easily syncing a Github repository with a Google Cloud Storage bucket. It is very generic and can be used for different purposes. I used it for uploading my static website.
 
 ## Features
