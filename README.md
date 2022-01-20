@@ -24,7 +24,6 @@ _\*If you want to sync to an exiting bucket, make sure that your repository incl
 - `bucket` Name of the target bucket. _**(Required)**_
 - `exclude` Regex for excluding files/dirs. ([gsutil rsync doc](https://cloud.google.com/storage/docs/gsutil/commands/rsync))
 - `cachecontrol` Cache control header (see [here](https://k0ssk.net/post/google-storage-cached-static-site/)) - defaults to 300 seconds
-- `compress` Compress files (see [gsutil rsync `-J option](https://cloud.google.com/storage/docs/gsutil/commands/rsync#options)). Defaults to `true`
 
 ## Example
 

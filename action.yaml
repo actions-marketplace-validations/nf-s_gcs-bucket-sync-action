@@ -13,10 +13,6 @@ inputs:
     description: Cache control (in seconds)
     required: false
     default: "300"
-  compress:
-    description: Compress files
-    required: false
-    default: "true"
   exclude:
     description: Regex for excluding files/dirs
     required: false
